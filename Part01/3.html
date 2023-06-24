@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form3</title>
+    <style>
+        .div1 {
+            border: 2px solid black;
+            padding: 10px;
+            width: fit-content;
+        }
+        input[type=checkbox]+label {
+            margin: 0.2em;
+            color: grey;
+        }
+
+        input[type=checkbox]:checked+label {
+            color: black;
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 15px 50px 15px 50px;
+            background-color: #8c8c8c;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <h1>Available Hotel Packages</h1>
+        <br>
+        <input type="checkbox" name="pkg1"><label for="pkg1">Wedding Package</label><br>
+        <input type="checkbox" name="pkg2"><label for="pkg2">Birthday Package</label><br>
+        <input type="checkbox" name="pkg3"><label for="pkg3">Normal Function Package</label><br>
+        <input type="checkbox" name="pkg4"><label for="pkg4">Day out Package</label><br>
+
+        <button type="button">Submit</button>
+    </div>
+
+</body>
+
+</html>

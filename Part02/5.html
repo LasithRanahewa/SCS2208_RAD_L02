@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 05</title>
+</head>
+
+<body>
+    <script>
+        //1
+        document.write("1)<br>");
+
+        var today = new Date();
+        var hour = today.getHours();
+
+        let greeting = "";
+        if (hour < 10) {
+            greeting = "Good morning!";
+        } else if (hour < 20) {
+            greeting = "Good day!";
+        } else {
+            greeting = "Good evening!";
+        }
+        document.write(greeting);
+
+        //2
+        document.write("<br><br>2)<br>");
+
+        const fruits = new Array("apple", "banana", "pineapple");
+        let x = Math.floor(Math.random() * 3);
+        switch (fruits[x]) {
+            case "banana":
+                alert("Yellow");
+            case "apple":
+                alert("Green");
+            case "pineapple":
+                alert("Orange");
+        }
+
+        //3
+        document.write("<br><br>3)<br>");
+        function largestNum(n1, n2, n3) {
+            if (n1 > n2) {
+                if (n1 > n3) {
+                    return n1;
+                } else {
+                    return n3;
+                }
+            } else {
+                if (n2 > n3) {
+                    return n2;
+                } else {
+                    return n3;
+                }
+            }
+        }
+        document.write(largestNum(1, 2, 3));
+
+        //4
+        document.write("<br><br>4)<br>");
+        function isPrime(num) {
+            if (num <= 0) {
+                return false;
+            }
+            if (num == 1) {
+                return true;
+            }
+            val = true;
+            for (let i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    val = false;
+                    break;
+                }
+            }
+            return val;
+        }
+
+        var num = 11;
+        if (isPrime(num)) {
+            document.write(num + " is a Prime number.<br>");
+        } else {
+            document.write(num + " is not a Prime number.<br>");
+        }
+
+        //5
+        document.write("<br><br>5)<br>");
+        function printOdd() {
+            let i = 1;
+            while (i <= 30) {
+                document.write(i + "<br>");
+                i = i + 2;
+            }
+        }
+        printOdd();
+
+        //6
+        document.write("<br><br>6)<br>");
+        const days = new Array(
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday",
+            "saturday",
+            "sunday"
+        );
+        for (let i = 0; i < days.length; i++) {
+            document.write(days[i] + "<br>");
+        }
+
+        //7
+        document.write("<br><br>7)<br>");
+        const numbers = [80, 30, 40, 50, 23];
+        document.write(numbers);
+        numbers[1] = 78;
+        document.write("<br>");
+        document.write(numbers);
+        document.write("<br>Length: " + numbers.length);
+
+        numbers.sort(function (a, b) {
+            return a - b;
+        });
+        document.write("<br>" + numbers);
+
+        //8
+        document.write("<br><br>8)<br>");
+        const names = ["sadun", "kamal", "nimal", "ruwan"];
+        const str = names;
+        document.write(str);
+        document.write("<br>");
+        names.pop();
+        document.write(names);
+        document.write("<br>");
+        names.push("nuwani");
+        document.write(names);
+        document.write("<br>");
+
+        //9
+        const myGirls = ["Cecilie", "Lone"];
+        const myBoys = ["Emil", "Tobias", "Linus"];
+        const myChildren = myGirls.concat(myBoys);
+        document.write("<br><br>9)<br>");
+        document.write(myChildren);
+
+        //10
+        numbersArray = [1, 13, 22, 123, 49];
+        document.write("<br><br>10)<br>");
+        document.write(numbersArray);
+        document.write("<br>");
+        let sum = 0;
+        for (let i = 0; i < numbersArray.length; i++) {
+            sum = sum + numbersArray[i];
+        }
+        document.write("Sum: " + sum);
+
+    </script>
+</body>
+
+</html>

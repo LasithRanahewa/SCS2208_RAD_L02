@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 03
+    </title>
+</head>
+
+<body>
+    <script>
+        //1
+        document.write("1)<br>");
+
+        function area(radius) {
+            return Math.PI * radius * radius;
+        }
+
+        function perimeter(radius) {
+            return 2 * Math.PI * radius;
+        }
+        var radius = 5;
+        document.write("Radius: " + radius + "<br>");
+        document.write("Area: " + area(radius) + "<br>");
+        document.write("Perimeter: " + perimeter(radius) + "<br>");
+
+        //2
+        document.write("<br>2)<br>");
+
+        function volumeCube(side) {
+            return side * side * side;
+        }
+        var side = 5;
+        document.write("Side: " + side + "<br>");
+        document.write("Volume of the cube: " + volumeCube(side) + "<br>");
+
+        //3
+        // document.write("<br>3)<br>");
+        function alertMessage() {
+            alert("hello , welcome to our paradise");
+        }
+        alertMessage();
+    </script>
+
+</body>
+
+</html>

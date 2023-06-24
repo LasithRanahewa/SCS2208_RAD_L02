@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 04</title>
+</head>
+
+<body>
+    <script>
+        //1
+        document.write("1)<br>");
+        const mammal = {
+            color: "Orange",
+            type: "Cat",
+            legs: 4,
+            name: "Kitty",
+            speed: 24,
+            // display : function(){
+            //     document.write("Type: " + this.type + "<br>"+ "Name: "+this.name +"<br>");
+            // }
+        };
+        // mammal.display();
+        document.write("Type: " + mammal.type + "<br>" + "Name: " + mammal.name + "<br>");
+
+        //2
+        document.write("<br>2)<br>");
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function () {
+                document.write(this.firstName +
+                    " " + this.lastName);
+            }
+        }
+        person.fullName();
+
+        //3
+        document.write("<br><br>3)<br>");
+        const triangle = {
+            Height: 25,
+            Base: 24,
+            color: "Red",
+            area: function () {
+                return 0.5 * this.Base * this.Height;
+            }
+        }
+
+        document.write("Height: " + triangle.Height + "<br>" + "Base: " + triangle.Base + "<br>" + "Color: " + triangle.color + "<br>" + "Area: " + triangle.area());
+
+
+    </script>
+
+</body>
+
+</html>
